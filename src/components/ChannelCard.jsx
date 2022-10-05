@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 import { demoProfilePicture } from '../utils/constants';
 
 const ChannelCard = ({channelDetail, marginTop}) => {
+  // console.log(marginTop);
   return (
-    <Box sx={{boxShadow: 'none', borderRadius: '20px'
+    <Box sx={
+      {boxShadow: 'none', borderRadius: '20px'
       ,display: 'flex', justifyContent:'center', alignItems: 'center', width:{ xs: '356px' , md: '320px'
-      ,height:'326px', margin : 'auto',marginTop:{marginTop}}}}>
+      ,height:'326px', margin : 'auto',marginTop}}
+      }>
         <Link to={`/channel/${channelDetail?.id?.channelId}`}>
           <CardContent sx={{display: 'flex', flexDirection:'column', 
         justifyContent:'center', textAlign:'center', color:'#fff'}}>
